@@ -284,13 +284,17 @@ if __name__ == '__main__':
         stopGROOVE = path + '\\GROOVEstop.ico'
         playKBAQ = path + '\\KBAQplay.ico'
         stopKBAQ = path + '\\KBAQstop.ico'
+        playKJAZZ = path + '\\KJAZZplay.ico'
+        stopKJAZZ = path + '\\KJAZZstop.ico'
         list_icons = [
             playDHR,
             stopDHR,
             playGROOVE,
             stopGROOVE,
             playKBAQ,
-            stopKBAQ
+            stopKBAQ,
+            playKJAZZ,
+            stopKJAZZ
             ]
         return list_icons
 
@@ -319,23 +323,27 @@ if __name__ == '__main__':
     url2 = 'https://jazzgroove.org'
     url3 = 'https://kbaq.org'
     url4 = 'www.patreon.com/deephouseradio'
-    url5 = 'https://www.patreon.com/bomben'
+    url5 = 'https://www.kkjz.org/support/'
+    url99 = 'https://www.patreon.com/bomben'
 
     media1 = 'https://deephouseradio.radioca.st/;'
     media2 = 'http://west-mp3-128.streamthejazzgroove.com/stream/1/'
     media3 = 'https://kbaq.streamguys1.com/kbaq_mp3_128'
+    media4 = 'http://1.ice1.firststreaming.com/kkjz_fm.mp3'
 
 
     menu_options = (('Deephouse Radio ', list_icons[1], play, media1),
                     ('The Jazz Groove', list_icons[2], play, media2),
                     ('KBAQ', list_icons[4], play, media3),
+                    ('KJAZZ', list_icons[6], play, media4)
                    )
 
     menu_options2 = (('visit deephouse-radio.com', None, brauser, url1),
                      ('visit jazzgroove.org', None, brauser, url2),
                      ('visit kbaq.org', None, brauser, url3),
                      ('patreon DHR', None, brauser, url4),
-                     ('patreon App', None, brauser, url5),
+                     ('visit kjazz.org', None, brauser, url5),
+                     ('patreon App', None, brauser, url99),
                      )
 
     def bye(sysTrayIcon): print('Bye, then.')
