@@ -326,8 +326,10 @@ if __name__ == '__main__':
     url5 = 'https://www.kkjz.org/support/'
     url99 = 'https://www.patreon.com/bomben'
 
-    media1 = 'https://deephouseradio.radioca.st/;'
-    media2 = 'http://west-mp3-128.streamthejazzgroove.com/stream/1/'
+    # media1 = 'https://deephouseradio.radioca.st/;'  # original, now with jingle
+    media1 = 'https://deephouseradio1.radioca.st/;'  # send by Alan
+    # media2 = 'http://east-mp3-128.streamthejazzgroove.com/stream/1/'  # original
+    media2 = 'https://streams.radiomast.io/0fc134ba-991c-4b1f-9b06-7e0358f1d680?token=c48XkqaJ'  # my token
     media3 = 'https://kbaq.streamguys1.com/kbaq_mp3_128'
     media4 = 'http://1.ice1.firststreaming.com/kkjz_fm.mp3'
 
